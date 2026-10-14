@@ -62,7 +62,7 @@
   const stats = [
     { value: years, unit: "+", label: "Years in tech & security" },
     { value: R.experience.length, unit: "", label: "Roles across the stack" },
-    { value: companies, unit: "", label: "Global organisations" },
+    { value: companies, unit: "", label: "Global organizations" },
     { value: 3, unit: "", label: "Frameworks: NIST · ISO · DORA" },
   ];
   $("#stats").innerHTML = stats.map((s) =>

@@ -95,7 +95,7 @@ window.RESUME = {
         "Acted as **Operations Manager and Subject Matter Expert**, supporting implementation of security controls in non-IT managed environments.",
         "Supervised and coordinated an **L1 support team (3 people)**, organizing tasks, setting priorities and improving operational efficiency.",
         "Led **knowledge transfer initiatives**, documentation standardization and onboarding support.",
-        "Held responsibility for several operational security services, including **Anti-virus, Log Monitoring, Vulnerability Management and Patch Management**.",
+        "Held responsibility for several operational security services, including **Antivirus, Log Monitoring, Vulnerability Management and Patch Management**.",
         "Coordinated tool implementations, upgrades and operational improvements, ensuring alignment with internal stakeholders and service requirements.",
       ],
     },
@@ -116,13 +116,13 @@ window.RESUME = {
     },
     {
       id: "nokia-radio",
-      title: "Radio Streaming – Network Implementations Engineer",
+      title: "Global Network Integration Specialist",
       company: "Nokia",
       location: "Alfragide, Portugal",
       start: "2014-05",
       end: "2015-10",
       phase: "telecom",
-      focus: "Multi-site & cross-country coordination",
+      focus: "Radio Streaming Team – multi-site & cross-country coordination",
       bullets: [
         "Supported and coordinated **multiple simultaneous network installations** across international environments.",
         "Acted as a **central coordination point between field engineers and remote teams**, ensuring alignment and issue resolution.",
@@ -246,7 +246,7 @@ window.RESUME = {
       { name: "Guided Telecommunication Systems", detail: "Optical networks, fiber optics" },
       { name: "Radio Telecommunication Systems", detail: "Radio links, electromagnetic waves" },
       { name: "Information Security", detail: "Confidentiality, Integrity, Availability" },
-      { name: "IoT with Open Source Tools", detail: "OpenHAB" },
+      { name: "IoT with Open Source Tools", detail: "openHAB" },
     ],
   },
 
@@ -266,11 +266,11 @@ window.RESUME = {
       ],
     },
     {
-      title: "Organisation",
+      title: "Organization",
       items: [
         "Coordination of multi-disciplinary teams and stakeholders",
         "Task prioritization and workload distribution",
-        "Support to project delivery and operational planning",
+        "Support for project delivery and operational planning",
         "Continuous improvement of processes and documentation",
       ],
     },
