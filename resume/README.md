@@ -19,8 +19,8 @@ Note: this repo is public. Don't add anything here you wouldn't put on the site.
 Edit `js/data.js`. Everything on the page (roles, skills, education, languages, contact) comes from that file.
 
 - Wrap text in `**double asterisks**` to highlight it.
-- Each skill has a `used` list of role ids (`bnp`, `tls`, `nokia-ops`, `ericsson`, `nokia-radio`, `nokia-sup`). That drives the "where I used it" highlighting. Leave it empty for general skills.
-- To replace the downloadable CV, drop the new PDF in `assets/` and update `cvFile`.
+- Each skill has a `used` list of role ids (`flutter`, `bnp`, `tls`, `nokia-ops`, `ericsson`, `nokia-radio`, `nokia-noc`). That drives the "where I used it" highlighting. Leave it empty for general skills.
+- The downloadable CV is generated from `js/data.js` via `cv-print.html`: run `powershell -ExecutionPolicy Bypass -File tools/build-cv-pdf.ps1` from the repo root after editing the data, and it rewrites the PDF in `assets/`.
 
 ## Structure
 

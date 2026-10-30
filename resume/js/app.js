@@ -63,7 +63,7 @@
     { value: years, unit: "+", label: "Years in tech & security" },
     { value: R.experience.length, unit: "", label: "Roles across the stack" },
     { value: companies, unit: "", label: "Global organizations" },
-    { value: 3, unit: "", label: "Frameworks: NIST · ISO · DORA" },
+    { value: 4, unit: "", label: "Frameworks: NIS2 · DORA · ISO · NIST" },
   ];
   $("#stats").innerHTML = stats.map((s) =>
     `<div class="stat reveal"><dd><span class="num" data-to="${s.value}">0</span><span class="unit">${s.unit}</span></dd><dt>${esc(s.label)}</dt></div>`
@@ -485,7 +485,7 @@
           input.disabled = true;
           const steps = [
             ["Enumerating experience…", `${R.experience.length} roles, ${years}+ years`],
-            ["Checking framework alignment…", "NIST ✓  ISO 27001 ✓  DORA ✓"],
+            ["Checking framework alignment…", "NIS2 ✓  DORA ✓  ISO 27001 ✓  NIST ✓"],
             ["Reviewing architecture controls…", "SIEM ✓  Cloud ✓  DevSecOps ✓"],
             ["Assessing stakeholder management…", "business ↔ technical translation: strong"],
             ["Testing communication channels…", "EN C1 · ES B1 · PT native"],
