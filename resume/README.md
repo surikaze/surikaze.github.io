@@ -25,13 +25,13 @@ Edit `js/data.js`. Everything on the page (roles, skills, education, languages, 
 ## Structure
 
 ```
-index.html        page layout
-css/styles.css    styling (light + dark themes)
-js/data.js        resume content
-js/app.js         terminal, timeline, skills explorer, animations
+index.html        main page: executive-briefing layout (self-contained styles and script)
+cv-print.html     print layout used to build the PDF
+js/data.js        resume content (shared by every page and the PDF)
 assets/           downloadable PDF
+classic/          previous terminal-style design (uses css/styles.css and js/app.js)
 ```
 
-## Terminal commands
+## Terminal commands (classic version)
 
 `help`, `whoami`, `experience [n]`, `skills [category]`, `education`, `languages`, `contact`, `cv`, `goto <section>`, `theme <light|dark>`, `scan`, `clear`. A couple of hidden ones too.

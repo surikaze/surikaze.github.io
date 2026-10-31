@@ -7,15 +7,16 @@
 <!-- Print layout of the CV. Renders from js/data.js; build the PDF with tools/build-cv-pdf.ps1 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --green: #3b9e80;
-    --green-line: #3b9e80;
+    --navy: #14213d;
+    --gold: #b8862b;
+    --rule: #14213d;
     --ink: #1f1f1f;
     --muted: #565656;
     --sep: #979797;
-    --row: #eef7f4;
+    --row: #f1f3f7;
   }
   @page { size: A4; margin: 12mm 12mm 12mm 12mm; }
   * { box-sizing: border-box; }
@@ -32,13 +33,13 @@
 
   /* Header */
   header.top {
-    background: var(--green);
+    background: var(--navy);
     color: #fff;
     padding: 5mm 6mm 4.5mm;
     margin-bottom: 5mm;
   }
-  header.top h1 { margin: 0 0 2.5mm; font-size: 20pt; font-weight: 800; letter-spacing: .2px; }
-  header.top .rule { height: 1px; background: rgba(0, 0, 0, .35); margin: 0 0 2.5mm; }
+  header.top h1 { margin: 0 0 2.5mm; font-family: "Source Serif 4", Georgia, serif; font-size: 22pt; font-weight: 600; letter-spacing: .2px; }
+  header.top .rule { height: 2px; width: 22mm; background: var(--gold); margin: 0 0 2.5mm; }
   header.top .line { margin: 1mm 0; }
   header.top b { font-weight: 700; }
   header.top a { color: #fff; }
@@ -50,10 +51,10 @@
     display: flex; align-items: center; gap: 2.4mm;
     margin: 0 0 2.5mm; padding-bottom: 1.2mm;
     font-size: 11pt; font-weight: 800; text-transform: uppercase; letter-spacing: .2px;
-    border-bottom: 1px solid var(--green-line);
+    border-bottom: 1px solid var(--rule);
     break-after: avoid;
   }
-  h2::before { content: ""; width: 2mm; height: 2mm; border-radius: 50%; background: var(--green); flex: none; }
+  h2::before { content: ""; width: 2mm; height: 2mm; border-radius: 50%; background: var(--gold); flex: none; }
   p { margin: 0 0 1.4mm; }
   b, strong { font-weight: 700; }
 
@@ -64,10 +65,10 @@
   .role-head { color: var(--muted); font-size: 9pt; margin-bottom: .6mm; }
   .role-head .t { font-weight: 700; font-size: 9.8pt; text-transform: uppercase; color: #4a4a4a; }
   .role-focus { font-weight: 700; color: #4a4a4a; margin: 0 0 .6mm; font-size: 9.2pt; }
-  .role-rule { width: 75mm; height: 1px; background: #a9d3c5; margin: 1mm 0 1.6mm; }
+  .role-rule { width: 75mm; height: 1px; background: #c3cad8; margin: 1mm 0 1.6mm; }
   ul { margin: 0; padding-left: 4.6mm; }
   li { margin: 0 0 .6mm; }
-  li::marker { color: var(--green); }
+  li::marker { color: var(--gold); }
 
   /* Education / languages */
   .edu .meta { color: var(--muted); font-size: 9pt; }
@@ -75,9 +76,9 @@
   table.lang { width: 100%; border-collapse: collapse; margin-top: 1.5mm; font-size: 9.2pt; }
   table.lang th, table.lang td { padding: 1.4mm 2mm; text-align: center; }
   table.lang th { font-weight: 700; }
-  table.lang thead tr:first-child th { border-bottom: 1px solid var(--green-line); }
-  table.lang thead tr:last-child th { font-weight: 400; border-bottom: 1px solid var(--green-line); }
-  table.lang td { border-bottom: 1px solid var(--green-line); }
+  table.lang thead tr:first-child th { border-bottom: 1px solid var(--rule); }
+  table.lang thead tr:last-child th { font-weight: 400; border-bottom: 1px solid var(--rule); }
+  table.lang td { border-bottom: 1px solid var(--rule); }
   table.lang td:first-child, table.lang th:first-child { text-align: left; font-weight: 800; }
   table.lang tbody tr:nth-child(odd) td { background: var(--row); }
   .levels { font-style: italic; color: var(--muted); font-size: 8.4pt; margin-top: 1.2mm; }
